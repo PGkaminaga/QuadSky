@@ -20,6 +20,8 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        this.transform.position += new Vector3(Time.deltaTime, 0, 0);
+
         if (Input.GetKeyDown(KeyCode.W)) // WƒL[‚ğ‰Ÿ‚µ‚½‚ç¶¬
         {
             

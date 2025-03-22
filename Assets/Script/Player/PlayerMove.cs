@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+    public float speed = 10f;
     private Rigidbody rb;
 
     [SerializeField] private Transform lowerPosition;
@@ -20,7 +21,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position += new Vector3(Time.deltaTime, 0, 0);
+        this.transform.position += new Vector3(0, 0, speed * Time.deltaTime);
 
         if (Input.GetKeyDown(KeyCode.W)) // WÉLÅ[ÇâüÇµÇΩÇÁê∂ê¨
         {

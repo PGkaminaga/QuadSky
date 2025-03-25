@@ -49,8 +49,8 @@ public class PlayerMove : MonoBehaviour
             is_mooved = true;
         }
 
-        if (this.transform.position.z <= leftPosition.transform.position.z
-           | this.transform.position.z >= ritghtPosition.transform.position.z)
+        if (this.transform.position.x <= leftPosition.transform.position.x
+           | this.transform.position.x >= ritghtPosition.transform.position.x)
         {
             dir = Vector3.zero;
             is_mooved = true;

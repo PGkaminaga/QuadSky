@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour
     public float speed = 10f;
     public float wait_time = 60f;
     private float wait_count;
+    public float character_speed = 30f;
 
     [SerializeField] private Transform lowerPosition;
     [SerializeField] private Transform highPosition;
@@ -35,6 +36,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        this.transform.position += new Vector3(0, 0, speed * Time.deltaTime);
         if (is_mooved)
         {
             wait_count += 1f;
